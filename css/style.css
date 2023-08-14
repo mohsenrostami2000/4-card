@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+
+/* || RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    font-family: "poppins";
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+h2 {
+    font-size: 1.2rem;
+} 
+
+
+/* || END RESET */
+
+/* || UTILITY RESET */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* || END UTILITY RESET */
+
+
+/* || GENERAL STYLE */
+
+/* || HEADER */
+
+header {
+    margin: 4rem 1.5rem 4rem 1.5rem;
+}
+
+h1 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h1 .notbold {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+
+/* || END HEADER */
+
+/* || MAIN */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    text-align: start;
+    margin: 0 1.5rem 2rem 1.5rem;
+}
+
+.text-box {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 5px 30px hsla(251, 12%, 66%, 0.767);
+}
+
+.text-box p {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.text-box img {
+    float: right;
+}
+
+.supervisor {
+    border-top: 7px solid hsl(180, 62%, 55%);
+}
+
+.teambuilder {
+    border-top: 7px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 7px solid hsl(34, 97%, 64%);
+}
+.calculator {
+    border-top: 7px solid hsl(212, 86%, 64%);
+}
+
+.t_k-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+}
+
+
+/* || END MAIN */
+
+/* ||FOOTER */
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+    position: sticky;
+}
+
+.attribution a:any-link,
+.attribution  {
+ color: #333;
+}
+
+/* || END FOOTER */
+
+/* || FOR DESKTOP --------------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 1050px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .t_k-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .text-box {
+        width: 25rem;
+        height: 15rem;
+    }
+
+    .container h2,
+    .container p {
+        margin-right: 3rem;
+    }
+   
+}
